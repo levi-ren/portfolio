@@ -4,8 +4,8 @@ interface AboutMeProps {}
 
 export default function AboutMe(props: AboutMeProps) {
   return (
-    <section id="about-me" className="">
-      <Container className="pt-28 px-2">
+    <section id="about-me" className="pt-28 px-2">
+      <Container>
         <p className="text-7xl font-bold font-mono">Me:</p>
         <article className="max-w-md">
           I am Arron Levi Ren Deang, most people call me{" "}
@@ -21,7 +21,7 @@ export default function AboutMe(props: AboutMeProps) {
           <br />
           <br />
           I create web-apps, translate UI/UX designs into reality, integrate
-          APIs into functionality and mostly work with forms, inputs and
+          APIs into functionality and mostly work with forms, inputs, and
           buttons.
           <br />
           <br />
