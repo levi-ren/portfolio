@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark:bg-[#121212] dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
+        className={`dark:bg-[#121212] bg-slate-50 dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
       >
         {children}
       </body>
