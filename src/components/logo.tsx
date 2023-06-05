@@ -25,7 +25,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="16"
           y2="1.5"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <line
           id="XMLID_1_"
@@ -35,7 +35,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="1.5"
           y2="63"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <line
           id="XMLID_4_"
@@ -45,7 +45,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="16"
           y2="62.5"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </g>
       <g id="XMLID_10_">
@@ -115,7 +115,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="48"
           y2="62.5"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <line
           id="XMLID_8_"
@@ -125,7 +125,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="62.5"
           y2="1"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <line
           id="XMLID_7_"
@@ -135,7 +135,7 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
           x2="48"
           y2="1.5"
           stroke="currentColor"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </g>
     </svg>
