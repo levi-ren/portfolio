@@ -5,6 +5,7 @@ const isDark =
   (!("theme" in localStorage) &&
     window.matchMedia("(prefers-color-scheme: dark)").matches);
 
+document.documentElement.classList.add("!scroll-smooth");
 document.documentElement.classList.toggle("dark", isDark);
 toggle.checked = isDark;
 

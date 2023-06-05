@@ -7,7 +7,7 @@ interface NavProps {}
 
 export default function Nav(props: NavProps) {
   return (
-    <nav className="py-4 px-2  dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm sticky top-0  ">
+    <nav className="py-4 px-2  dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm sticky top-0 z-20">
       <Container className="flex justify-between items-center ">
         <Link href="/">
           <Logo width={40} height={40} className="" />
@@ -22,9 +22,9 @@ export default function Nav(props: NavProps) {
           </Link>
           <Link
             className="hover:text-base transition-[font-size] "
-            href="#timeline"
+            href="#experiences"
           >
-            Timeline
+            Work
           </Link>
           <Link
             className="hover:text-base transition-[font-size] "
