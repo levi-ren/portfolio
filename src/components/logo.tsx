@@ -1,5 +1,3 @@
-"use client";
-
 import { SVGProps, memo } from "react";
 
 const SVG = (props: SVGProps<SVGSVGElement>) => {
@@ -143,4 +141,4 @@ const SVG = (props: SVGProps<SVGSVGElement>) => {
 };
 
 const Logo = memo(SVG);
-export default SVG;
+export default Logo;

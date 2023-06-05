@@ -1,9 +1,11 @@
-import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Nav from "@/components/nav";
 
 export default function Home() {
   return (
-    <main className="dark:bg-black min-h-screen">
-      <Header />
+    <main className="min-h-screen">
+      <Hero />
+      <Nav />
     </main>
   );
 }

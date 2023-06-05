@@ -3,42 +3,42 @@ import Logo from "@/components/logo";
 import Link from "next/link";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
-interface HeaderProps {}
+interface NavProps {}
 
-export default function Header(props: HeaderProps) {
+export default function Nav(props: NavProps) {
   return (
-    <header className="py-4 px-2 dark:bg-black/90 dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm">
+    <nav className="py-4 px-2  dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm sticky top-0  ">
       <Container className="flex justify-between items-center ">
         <Link href="/">
           <Logo width={40} height={40} className="" />
         </Link>
 
-        <nav className="space-x-4">
+        <div className="space-x-4">
           <Link
-            className="hover:text-base transition-all duration-300"
-            href="/about-me"
+            className="hover:text-base transition-[font-size]"
+            href="#about-me"
           >
             About Me
           </Link>
           <Link
-            className="hover:text-base transition-all duration-300"
-            href="/timeline"
+            className="hover:text-base transition-[font-size] "
+            href="#timeline"
           >
             Timeline
           </Link>
           <Link
-            className="hover:text-base transition-all duration-300"
-            href="/projects"
+            className="hover:text-base transition-[font-size] "
+            href="#projects"
           >
             Projects
           </Link>
           <Link
-            className="hover:text-base transition-all duration-300"
-            href="/contact"
+            className="hover:text-base transition-[font-size] "
+            href="#contact"
           >
             Contact
           </Link>
-        </nav>
+        </div>
         <label
           htmlFor="darkmode-switch"
           className="dark:bg-zinc-800 w-12 h-7 flex justify-between items-center cursor-pointer relative p-1 rounded-full dark:border-slate-50/20 border-slate-200 bg-slate-400 "
@@ -53,6 +53,6 @@ export default function Header(props: HeaderProps) {
           <span className="absolute bg-white h-5 w-5 rounded-full peer-checked:translate-x-5 transition-all" />
         </label>
       </Container>
-    </header>
+    </nav>
   );
 }
