@@ -1,4 +1,5 @@
 import { Quicksand, Shadows_Into_Light } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -27,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark:bg-[#121212] bg-slate-50 dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
+        className={`relative dark:bg-[#121212] bg-slate-50 dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
       >
         {children}
       </body>
-      <script id="darkmode" src="/darkmode.js" async />
+      <Script id="darkmode" src="/darkmode.js" />
     </html>
   );
 }

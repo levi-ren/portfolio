@@ -6,8 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
+      screens: {
+        xs: "425px",
+      },
       fontFamily: {
         sans: ["var(--font-quicksand)"],
         mono: ["var(--font-shadows)"],
