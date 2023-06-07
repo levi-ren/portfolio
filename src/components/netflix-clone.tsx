@@ -13,6 +13,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
           href="https://parcel-v2.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          aria-label="View and demo Flixy"
         >
           <Image
             src="/netflix-clone.png"
@@ -35,6 +36,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
           collection of content across genres, anytime, anywhere.
         </p>
         <ProjectNav
+          projectName="Flixy"
           githubLink="https://github.com/levi-ren/netflix-clone"
           demoLink="https://netflix-clone-five-drab.vercel.app"
         />

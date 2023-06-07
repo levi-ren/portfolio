@@ -11,7 +11,7 @@ export default function Nav(props: NavProps) {
   return (
     <nav className="py-4 px-2  dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm sticky top-0 z-20 mt-16">
       <Container className="flex justify-between items-center ">
-        <Link href="/">
+        <Link href="/" aria-label="Home link">
           <Logo width={40} height={40} className="" />
         </Link>
 
@@ -21,6 +21,7 @@ export default function Nav(props: NavProps) {
               key={link.name}
               className="hover:text-base transition-[font-size]"
               href={link.href}
+              aria-label={link.label}
             >
               {link.name}
             </Link>
@@ -34,6 +35,7 @@ export default function Nav(props: NavProps) {
             type="checkbox"
             className="opacity-0 absolute peer"
             id="darkmode-switch"
+            aria-label="dark mode switch"
           />
           <IoMoon className="text-slate-400" />
           <IoSunny className="text-yellow-400" />

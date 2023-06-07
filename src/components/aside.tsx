@@ -36,6 +36,7 @@ const Aside = (props: AsideProps) => {
           onClick={() => {
             toggle();
           }}
+          aria-label={link.label}
           className="hover:text-base transition-[font-size]"
           href={link.href}
         >

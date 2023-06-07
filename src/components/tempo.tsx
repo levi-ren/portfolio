@@ -18,6 +18,7 @@ export default function Tempo(props: TempoProps) {
         <ProjectNav
           githubLink="https://github.com/levi-ren/weather-app-v3"
           demoLink="https://weather-app-v3-sepia.vercel.app/"
+          projectName="Tempo"
           right
         />
       </div>

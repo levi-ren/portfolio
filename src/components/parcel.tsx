@@ -13,6 +13,7 @@ export default function Parcel(props: ParcelProps) {
           href="https://parcel-v2.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          aria-label="View and demo Parcel"
         >
           <Image
             src="/parcel-desktop.png"
@@ -37,7 +38,10 @@ export default function Parcel(props: ParcelProps) {
           Rich and responsive e-commerce platform with a variety of products to
           choose from.
         </p>
-        <ProjectNav demoLink="https://parcel-v2.vercel.app/" />
+        <ProjectNav
+          projectName="Parcel"
+          demoLink="https://parcel-v2.vercel.app/"
+        />
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ export default function Portfolio(props: PortfolioProps) {
           githubLink="https://github.com/levi-ren/portfolio"
           demoLink="/"
           right
+          projectName="Portfolio"
         />
       </div>
       <div className="flex-1 w-full ">

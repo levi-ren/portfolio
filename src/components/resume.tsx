@@ -18,6 +18,7 @@ export default function Resume(props: ResumeProps) {
         <ProjectNav
           githubLink="https://github.com/levi-ren/digital-resume-v2"
           demoLink="https://digital-resume-v2-blond.vercel.app/"
+          projectName="Resume"
           right
         />
       </div>
