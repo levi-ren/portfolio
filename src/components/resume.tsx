@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SiCss3, SiHtml5, SiVite } from "react-icons/si";
+import Anchor from "./anchor";
 import ProjectNav from "./project-nav";
 
 interface ResumeProps {}
@@ -23,10 +23,11 @@ export default function Resume(props: ResumeProps) {
         />
       </div>
       <div className="flex-1 w-full ">
-        <Link
+        <Anchor
           href="https://digital-resume-v2-blond.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-[9/12.9] rounded-lg border border-white/20 shrink-0 shadow-lg"
+          aria-label="Project Resume demo link"
         >
           <Image
             src="/resume.png"
@@ -34,7 +35,7 @@ export default function Resume(props: ResumeProps) {
             fill
             className="object-contain rounded-lg"
           />
-        </Link>
+        </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiHtml5 className="h-6 w-6 text-orange-600" title="HTML" />
           <SiCss3 className="h-6 w-6 text-blue-500" title="CSS" />

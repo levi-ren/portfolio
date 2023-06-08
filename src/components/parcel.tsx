@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SiMongodb, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import Anchor from "./anchor";
 import ProjectNav from "./project-nav";
 
 interface ParcelProps {}
@@ -9,11 +9,11 @@ export default function Parcel(props: ParcelProps) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-center">
       <div className="flex-1 w-full">
-        <Link
+        <Anchor
           href="https://parcel-v2.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
-          aria-label="View and demo Parcel"
+          aria-label="Project Parcel demo link"
         >
           <Image
             src="/parcel-desktop.png"
@@ -21,7 +21,7 @@ export default function Parcel(props: ParcelProps) {
             fill
             className="object-contain rounded-lg"
           />
-        </Link>
+        </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
           <div className="p-[1px] rounded-full border dark:border-slate-50/20 border-slate-400">

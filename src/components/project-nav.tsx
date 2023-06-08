@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { VscGithubAlt, VscLinkExternal } from "react-icons/vsc";
 import { twMerge } from "tailwind-merge";
+import Anchor from "./anchor";
 
 interface ProjectNavProps {
   githubLink?: string;
@@ -24,21 +24,21 @@ export default function ProjectNav({
         )}
       />
       {githubLink && (
-        <Link
+        <Anchor
           href={githubLink}
           target="_blank"
           aria-label={`Project ${projectName} Github link`}
         >
           <VscGithubAlt className="h-6 w-6" />
-        </Link>
+        </Anchor>
       )}
-      <Link
+      <Anchor
         href={demoLink}
         target="_blank"
         aria-label={`Project ${projectName} demo link`}
       >
         <VscLinkExternal className="h-6 w-6" />
-      </Link>
+      </Anchor>
       <div
         className={twMerge(
           "dark:border-slate-50/20 border-zinc-900 border-b w-full ",

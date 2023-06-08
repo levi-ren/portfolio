@@ -1,9 +1,9 @@
 "use client";
 
 import useUIStore from "@/store/ui";
-import Link from "next/link";
 import { TfiClose } from "react-icons/tfi";
 import { twMerge } from "tailwind-merge";
+import Anchor from "./anchor";
 import { links } from "./links";
 
 interface AsideProps {}
@@ -31,7 +31,7 @@ const Aside = (props: AsideProps) => {
         <TfiClose className="h-5 w-5" />
       </button>
       {links.map((link) => (
-        <Link
+        <Anchor
           key={link.name}
           onClick={() => {
             toggle();
@@ -41,7 +41,7 @@ const Aside = (props: AsideProps) => {
           href={link.href}
         >
           {link.name}
-        </Link>
+        </Anchor>
       ))}
     </aside>
   );

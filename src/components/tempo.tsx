@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SiReact, SiReactquery, SiTailwindcss } from "react-icons/si";
+import Anchor from "./anchor";
 import ProjectNav from "./project-nav";
 
 interface TempoProps {}
@@ -23,10 +23,11 @@ export default function Tempo(props: TempoProps) {
         />
       </div>
       <div className="flex-1 w-full ">
-        <Link
+        <Anchor
           href="https://weather-app-v3-sepia.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          aria-label="Project Tempo demo link"
         >
           <Image
             src="/tempo.png"
@@ -34,7 +35,7 @@ export default function Tempo(props: TempoProps) {
             fill
             className="object-contain rounded-lg"
           />
-        </Link>
+        </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiReact className="h-6 w-6 text-blue-300" title="React JS" />
           <SiTailwindcss className="h-6 w-6 text-blue-500" title="Tailwind" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import Anchor from "./anchor";
 import ProjectNav from "./project-nav";
 
 interface NetflixCloneProps {}
@@ -9,11 +9,11 @@ export default function NetflixClone(props: NetflixCloneProps) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-center">
       <div className="flex-1 w-full ">
-        <Link
+        <Anchor
           href="https://parcel-v2.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
-          aria-label="View and demo Flixy"
+          aria-label="Project Flixy demo link"
         >
           <Image
             src="/netflix-clone.png"
@@ -21,7 +21,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
             fill
             className="object-contain rounded-lg"
           />
-        </Link>
+        </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
           <SiTailwindcss className="h-6 w-6 text-blue-500" title="Tailwind" />

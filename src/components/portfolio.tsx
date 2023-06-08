@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SiNextdotjs } from "react-icons/si";
+import Anchor from "./anchor";
 import ProjectNav from "./project-nav";
 
 interface PortfolioProps {}
@@ -22,10 +22,11 @@ export default function Portfolio(props: PortfolioProps) {
         />
       </div>
       <div className="flex-1 w-full ">
-        <Link
+        <Anchor
           href="https://weather-app-v3-sepia.vercel.app/"
           target="_blank"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          aria-label="Project Portfolio demo link"
         >
           <Image
             src="/portfolio.png"
@@ -33,7 +34,7 @@ export default function Portfolio(props: PortfolioProps) {
             fill
             className="object-contain rounded-lg"
           />
-        </Link>
+        </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
         </div>
