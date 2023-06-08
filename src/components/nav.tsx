@@ -1,7 +1,7 @@
 import Container from "@/components/container";
 import Logo from "@/components/logo";
-import { IoMoon, IoSunny } from "react-icons/io5";
 import Anchor from "./anchor";
+import DarkmodeSwitch from "./darkmode-switch";
 import { links } from "./links";
 import MenuButton from "./menu-button";
 
@@ -27,20 +27,7 @@ export default function Nav(props: NavProps) {
             </Anchor>
           ))}
         </div>
-        <label
-          htmlFor="darkmode-switch"
-          className="dark:bg-zinc-800 w-12 h-7  justify-between items-center cursor-pointer relative p-1 rounded-full dark:border-slate-50/20 border-slate-200 bg-slate-400 hidden xs:flex"
-        >
-          <input
-            type="checkbox"
-            className="opacity-0 absolute peer"
-            id="darkmode-switch"
-            aria-label="dark mode switch"
-          />
-          <IoMoon className="text-slate-400" />
-          <IoSunny className="text-yellow-400" />
-          <span className="absolute bg-white h-5 w-5 rounded-full peer-checked:translate-x-5 transition-all" />
-        </label>
+        <DarkmodeSwitch />
         <MenuButton />
       </Container>
     </nav>
