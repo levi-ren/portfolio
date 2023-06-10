@@ -16,15 +16,14 @@ export default function Portfolio(props: PortfolioProps) {
         </p>
         <ProjectNav
           githubLink="https://github.com/levi-ren/portfolio"
-          demoLink="/"
+          demoLink="https://portfolio-drab-kappa-50.vercel.app/"
           right
           projectName="Portfolio"
         />
       </div>
       <div className="flex-1 w-full ">
         <Anchor
-          href="https://weather-app-v3-sepia.vercel.app/"
-          target="_blank"
+          href="/"
           className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
           aria-label="Project Portfolio demo link"
         >

@@ -2,7 +2,6 @@ import Container from "./container";
 import NetflixClone from "./netflix-clone";
 import Parcel from "./parcel";
 import Portfolio from "./portfolio";
-import Resume from "./resume";
 import Tempo from "./tempo";
 
 interface ProjectsProps {}
@@ -16,7 +15,6 @@ export default function Projects(props: ProjectsProps) {
         <Parcel />
         <Tempo />
         <NetflixClone />
-        <Resume />
       </Container>
     </section>
   );
