@@ -9,7 +9,7 @@ interface NavProps {}
 
 export default function Nav(props: NavProps) {
   return (
-    <nav className="py-4 px-2  dark:text-white backdrop-blur border-b dark:border-slate-50/20 border-slate-200 text-sm sticky top-0 z-20 mt-16">
+    <nav className="py-4 px-2  dark:text-white backdrop-blur border-b shadow-md dark:shadow-white-md dark:border-slate-50/20 border-slate-200 text-sm sticky top-0 z-20 mt-16">
       <Container className="flex justify-between items-center ">
         <Anchor href="/" aria-label="Home link">
           <Logo width={40} height={40} className="" />

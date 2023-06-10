@@ -11,6 +11,10 @@ module.exports = {
   },
   theme: {
     extend: {
+      boxShadow: {
+        "white-md":
+          "0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1)",
+      },
       screens: {
         xs: "425px",
       },
