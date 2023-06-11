@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Quicksand, Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`relative dark:bg-[#121212] bg-slate-50 dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
