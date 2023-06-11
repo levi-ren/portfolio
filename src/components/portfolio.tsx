@@ -16,7 +16,7 @@ export default function Portfolio(props: PortfolioProps) {
         </p>
         <ProjectNav
           githubLink="https://github.com/levi-ren/portfolio"
-          demoLink="https://portfolio-drab-kappa-50.vercel.app/"
+          demoLink="https://www.levideang.dev/"
           right
           projectName="Portfolio"
         />
