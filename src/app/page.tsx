@@ -7,6 +7,8 @@ import Hero from "@/components/hero";
 import Nav from "@/components/nav";
 import Projects from "@/components/projects";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <>
