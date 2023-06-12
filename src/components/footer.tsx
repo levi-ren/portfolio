@@ -1,4 +1,4 @@
-import { SlSocialLinkedin } from "react-icons/sl";
+import { SlEnvolope, SlSocialLinkedin } from "react-icons/sl";
 import { VscGithubAlt } from "react-icons/vsc";
 import Anchor from "./anchor";
 import Container from "./container";
@@ -16,7 +16,7 @@ export default function Footer(props: FooterProps) {
             aria-label="View my LinkedIn profile"
             className="inline-block"
           >
-            <SlSocialLinkedin className="h-6 w-6 inlin" />
+            <SlSocialLinkedin className="h-6 w-6" />
           </Anchor>
 
           <Anchor
@@ -25,7 +25,16 @@ export default function Footer(props: FooterProps) {
             aria-label="View my Github profile"
             className="inline-block"
           >
-            <VscGithubAlt className="h-6 w-6 inlin" />
+            <VscGithubAlt className="h-6 w-6" />
+          </Anchor>
+
+          <Anchor
+            href="mailto:arron.levi1@gmail.com"
+            target="_blank"
+            aria-label="Email me"
+            className="inline-block"
+          >
+            <SlEnvolope className="h-6 w-6" />
           </Anchor>
         </div>
         Levi Deang © {new Date().getFullYear()}
