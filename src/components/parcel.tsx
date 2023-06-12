@@ -16,7 +16,7 @@ export default function Parcel(props: ParcelProps) {
           aria-label="Project Parcel demo link"
         >
           <Image
-            src="/parcel-desktop.png"
+            src="/parcel.png"
             alt="Parcel"
             fill
             className="object-contain rounded-lg"

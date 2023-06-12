@@ -1,7 +1,8 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "homepage": "https://www.levideang.dev",
   "scripts": {
     "dev": "next dev --turbo --show-all",
     "build": "next build",
