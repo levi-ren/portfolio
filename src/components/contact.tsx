@@ -9,7 +9,7 @@ export default function Contact(props: ContactProps) {
       <Container className="">
         <p className="font-mono text-7xl text-right">Contact:</p>
         <p className="text-right text-xl font-mono">
-          Interested? Send me an email.
+          Interested? Feel free to say hi.
         </p>
 
         <Form>
