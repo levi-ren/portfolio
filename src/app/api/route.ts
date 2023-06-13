@@ -3,9 +3,7 @@ import { Redis } from "@upstash/redis";
 import { geolocation, ipAddress } from "@vercel/edge";
 import { NextRequest, NextResponse } from "next/server";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
