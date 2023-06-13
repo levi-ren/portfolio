@@ -1,6 +1,11 @@
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
+import { geolocation, ipAddress } from "@vercel/edge";
 import { NextRequest, NextResponse } from "next/server";
+
+export const config = {
+  runtime: "edge",
+};
 
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
@@ -16,11 +21,13 @@ interface Message {
 
 export async function POST(request: NextRequest) {
   const body: Message = await request.json();
+  const geo = geolocation(request);
+  const ip = ipAddress(request);
 
   const result = await ratelimit.limit(request.ip || "");
 
   if (!result.success) {
-    return NextResponse.json({ result, ip: request.ip }, { status: 429 });
+    return NextResponse.json({ result, ip, geo }, { status: 429 });
   }
 
   const form = {

@@ -18,6 +18,7 @@
     "@upstash/ratelimit": "^0.4.3",
     "@upstash/redis": "^1.21.0",
     "@vercel/analytics": "^1.0.1",
+    "@vercel/edge": "^0.3.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
