@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
   const result = await ratelimit.limit(request.ip || "");
 
   if (!result.success) {
-    return NextResponse.json({}, { status: 429 });
+    return NextResponse.json({ result, ip: request.ip }, { status: 429 });
   }
 
   const form = {
