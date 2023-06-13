@@ -16,15 +16,15 @@ const Form = ({ children }: FormProps) => {
       body[key] = value;
     });
 
-    // fetch("/api", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(body),
-    // });
-
-    alert("Coming soon!");
+    fetch("/api", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    }).then(() => {
+      // event.currentTarget.reset();
+    });
   };
 
   return (

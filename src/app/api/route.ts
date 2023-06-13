@@ -1,6 +1,14 @@
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 import { NextRequest, NextResponse } from "next/server";
 
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.fixedWindow(1, "1d"),
+});
+
 interface Message {
+  name: string;
   From: string;
   Subject: string;
   Body: string;
@@ -8,18 +16,27 @@ interface Message {
 
 export async function POST(request: NextRequest) {
   const body: Message = await request.json();
+
+  const result = await ratelimit.limit(request.ip || "");
+
+  if (!result.success) {
+    return NextResponse.json({}, { status: 429 });
+  }
+
   const form = {
-    Host: "smtp.elasticemail.com",
-    Username: "arron.levi1@gmail.com",
-    Password: "C3F8896C87FB0C5A20337E44857003979F3F",
-    From: "arron.levi2@gmail.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-    To: "arron.levi1@gmail.com",
+    SecureToken: process.env.EMAIL_TOKEN,
+    From: process.env.EMAIL_FROM,
+    Subject: body.Subject,
+    Body: `
+    <p style="margin: 0;">From: ${body.name}</p>
+    <p style="margin: 0;">Email: ${body.From}</p>
+    <hr/>
+    <blockquote style="white-space: pre-wrap; margin: 40px 0;">${body.Body}</blockquote>`,
+    To: process.env.EMAIL_TO,
     nocache: Math.floor(1e6 * Math.random() + 1),
     Action: "Send",
   };
-  console.log(form);
+
   await fetch('https://smtpjs.com/v3/smtpjs.aspx?"', {
     method: "POST",
     body: JSON.stringify(form),
@@ -29,12 +46,15 @@ export async function POST(request: NextRequest) {
         console.log("error", e);
         throw e;
       }
-
-      const ret = await e.text();
-      console.log(ret);
-      return e;
+      return NextResponse.json(
+        { message: "Email sent!" },
+        {
+          headers: {
+            "X-RateLimit-Limit": `${result.limit}`,
+            "X-RateLimit-Remaining": `${result.remaining}`,
+          },
+        }
+      );
     })
     .catch(console.log);
-
-  return NextResponse.json({ message: "Email sent!" });
 }
