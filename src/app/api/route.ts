@@ -2,13 +2,6 @@ import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "edge";
-
-const ratelimit = new Ratelimit({
-  redis: Redis.fromEnv(),
-  limiter: Ratelimit.fixedWindow(1, "1d"),
-});
-
 interface Message {
   name: string;
   From: string;
@@ -17,13 +10,16 @@ interface Message {
 }
 
 export async function POST(request: NextRequest) {
+  const ratelimit = new Ratelimit({
+    redis: Redis.fromEnv(),
+    limiter: Ratelimit.fixedWindow(1, "1d"),
+  });
   const body: Message = await request.json();
-  console.log(request.headers);
+  const ip = request.headers.get("x-forwarded-for") || "unknown";
 
-  const result = await ratelimit.limit(request.ip || "unknown");
-
-  if (!result.success) {
-    return NextResponse.json({ result, ...request.headers }, { status: 429 });
+  const limit = await ratelimit.limit(ip);
+  if (!limit.success) {
+    return NextResponse.json({ message: "Limit reached" }, { status: 429 });
   }
 
   const form = {
@@ -40,25 +36,21 @@ export async function POST(request: NextRequest) {
     Action: "Send",
   };
 
-  await fetch('https://smtpjs.com/v3/smtpjs.aspx?"', {
-    method: "POST",
-    body: JSON.stringify(form),
-  })
-    .then(async (e) => {
+  try {
+    await fetch('https://smtpjs.com/v3/smtpjs.aspx?"', {
+      method: "POST",
+      body: JSON.stringify(form),
+    }).then(async (e) => {
       if (!e.ok) {
-        console.log("error", e);
         throw e;
       }
-      return NextResponse.json(
-        { message: "Email sent!" },
-        {
-          headers: {
-            ...request.headers,
-            "X-RateLimit-Limit": `${result.limit}`,
-            "X-RateLimit-Remaining": `${result.remaining}`,
-          },
-        }
-      );
-    })
-    .catch(console.log);
+    });
+
+    return NextResponse.json({ message: "Email sent!" });
+  } catch (error) {
+    return NextResponse.json(
+      { message: "Something went wrong" },
+      { status: 500 }
+    );
+  }
 }

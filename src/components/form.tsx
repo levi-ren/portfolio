@@ -22,8 +22,6 @@ const Form = ({ children }: FormProps) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(body),
-    }).then(() => {
-      // event.currentTarget.reset();
     });
   };
 
