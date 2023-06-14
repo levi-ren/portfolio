@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Quicksand, Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
 
@@ -14,9 +15,27 @@ const shadows = Shadows_Into_Light({
   weight: "400",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Levi Deang",
-  description: "Levi Deang's portfolio, bootstraped with Next JS",
+  description:
+    "Comprehensive representation of my professional and creative work.",
+  applicationName: "Portfolio",
+  openGraph: {
+    title: "Portfolio",
+    description:
+      "Comprehensive representation of my professional and creative work.",
+    url: "https://www.levideang.dev",
+    images:
+      "https://www.levideang.dev/_next/image?url=%2Fportfolio.png&w=1200&q=75",
+  },
+  twitter: {
+    title: "Portfolio",
+    description:
+      "Comprehensive representation of my professional and creative work.",
+    card: "summary",
+    images:
+      "https://www.levideang.dev/_next/image?url=%2Fportfolio.png&w=1200&q=75",
+  },
 };
 
 export default function RootLayout({
