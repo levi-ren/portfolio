@@ -25,17 +25,15 @@ export const metadata: Metadata = {
     description:
       "Comprehensive representation of my professional and creative work.",
     url: "https://www.levideang.dev",
-    images:
-      "https://www.levideang.dev/_next/image?url=%2Fportfolio.png&w=1200&q=75",
+    images: "/portfolio.png",
   },
   twitter: {
     title: "Portfolio",
     description:
       "Comprehensive representation of my professional and creative work.",
-    card: "summary",
+    card: "summary_large_image",
     site: "https://www.levideang.dev",
-    images:
-      "https://www.levideang.dev/_next/image?url=%2Fportfolio.png&w=1200&q=75",
+    images: "/portfolio.png",
   },
 };
 
