@@ -8,7 +8,7 @@ export default function Hero() {
     >
       <Logo className="h-[40vw] w-[40vw] absolute text-zinc-900/40" />
       <div className="text-5xl sm:text-7xl font-mono relative z-10">
-        <h2 className="">Levi Deang</h2>
+        <h1 className="">Levi Deang</h1>
         <h2 className="text-xl">Front-end developer</h2>
       </div>
     </section>

@@ -9,15 +9,13 @@ export default function AboutMe(props: AboutMeProps) {
         <p className="text-7xl font-bold font-mono">Me:</p>
         <article className="max-w-md">
           I am Arron Levi Ren Deang, most people call me{" "}
-          <h1 className="font-mono font-bold inline text-lg">Levi</h1>
+          <p className="font-mono font-bold inline text-lg">Levi</p>
           <br />
           A passionate front-end developer with over half a decade of experience
           <br />
           <br />
           Currently a Software Developer at{" "}
-          <h1 className="font-mono font-bold inline text-lg">
-            MDI Novare Inc.
-          </h1>
+          <p className="font-mono font-bold inline text-lg">MDI Novare Inc.</p>
           <br />
           <br />
           I create web-apps, translate UI/UX designs into reality, integrate
