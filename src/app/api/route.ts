@@ -17,11 +17,6 @@ export async function POST(request: NextRequest) {
   const body: Message = await request.json();
   const ip = request.headers.get("x-forwarded-for") || "unknown";
 
-  const limit = await ratelimit.limit(ip);
-  if (!limit.success) {
-    return NextResponse.json({ message: "Limit reached" }, { status: 429 });
-  }
-
   const form = {
     SecureToken: process.env.EMAIL_TOKEN,
     From: process.env.EMAIL_FROM,
@@ -37,6 +32,23 @@ export async function POST(request: NextRequest) {
   };
 
   try {
+    const ratelimiting = await ratelimit.limit(ip);
+    if (!ratelimiting.success) {
+      return NextResponse.json(
+        { message: "Limit reached" },
+        {
+          status: 429,
+          headers: {
+            "X-Rate-Limit": `${ratelimiting.limit}`,
+            "X-Rate-Remaining": `${ratelimiting.remaining}`,
+            "X-Rate-Reset": `${new Date(
+              ratelimiting.reset
+            ).toLocaleDateString()}`,
+          },
+        }
+      );
+    }
+
     await fetch('https://smtpjs.com/v3/smtpjs.aspx?"', {
       method: "POST",
       body: JSON.stringify(form),
@@ -46,7 +58,18 @@ export async function POST(request: NextRequest) {
       }
     });
 
-    return NextResponse.json({ message: "Email sent!" });
+    return NextResponse.json(
+      { message: "Email sent!" },
+      {
+        headers: {
+          "X-Rate-Limit": `${ratelimiting.limit}`,
+          "X-Rate-Remaining": `${ratelimiting.remaining}`,
+          "X-Rate-Reset": `${new Date(
+            ratelimiting.reset
+          ).toLocaleDateString()}`,
+        },
+      }
+    );
   } catch (error) {
     return NextResponse.json(
       { message: "Something went wrong" },

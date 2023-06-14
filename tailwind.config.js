@@ -11,6 +11,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      keyframes: {
+        fade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      animation: {
+        fade: "fade 0.3s ease-in normal",
+      },
       boxShadow: {
         "white-md":
           "0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1)",

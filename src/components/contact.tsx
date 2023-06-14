@@ -77,9 +77,6 @@ export default function Contact(props: ContactProps) {
               Message{" "}
             </label>
           </div>
-          <button className="text-xs rounded-full border dark:border-slate-50/20 border-black/70 py-4 px-8 m-auto block">
-            SEND MESSAGE
-          </button>
         </Form>
       </Container>
     </section>
