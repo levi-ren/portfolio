@@ -6,7 +6,7 @@ export default function AboutMe(props: AboutMeProps) {
   return (
     <Container as="section" id="about-me" className="pt-28 px-2 text-justify">
       <article className="max-w-md space-y-2">
-        <div className="text-sm border-b dark:border-slate-50/20 border-slate-200 pb-2 space-y-2">
+        <div className="text-sm border-b dark:border-slate-50/20 border-zinc-400 pb-2 space-y-2">
           <p className="text-7xl font-bold font-mono">Levi</p>
           <em>/ ˈlɛ vi / noun:</em>
           <ul className="list-disc pl-4 ml-4">

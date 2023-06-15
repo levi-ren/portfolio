@@ -27,7 +27,7 @@ export default function TechStack(props: TechStackProps) {
     >
       <p className="text-4xl font-bold font-mono">Techstack:</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 p-4">
-        <article className="flex-1 p-4 border dark:border-slate-50/20 border-slate-200 rounded-xl text-center sm:col-span-2 md:col-span-1">
+        <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center sm:col-span-2 md:col-span-1">
           <p className="font-mono text-xl font-semibold">Front-end</p>
           <p className="text-sm py-4">
             I am a front-end developer by trade, and my current expertise.
@@ -61,7 +61,7 @@ export default function TechStack(props: TechStackProps) {
             </li>
           </ul>
         </article>
-        <article className="flex-1 p-4 border dark:border-slate-50/20 border-slate-200 rounded-xl text-center">
+        <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
           <p className="font-mono text-xl font-semibold">Back-end</p>
           <p className="text-sm py-4">
             Not my strongest suit, but have a good understanding.
@@ -78,7 +78,7 @@ export default function TechStack(props: TechStackProps) {
             </li>
           </ul>
         </article>
-        <article className="flex-1 p-4 border dark:border-slate-50/20 border-slate-200 rounded-xl text-center">
+        <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
           <p className="font-mono text-xl font-semibold">Tools & Platform</p>
           <p className="text-sm py-4">Favorite tools to get things done.</p>
           <ul className="space-y-1 inline-block">
