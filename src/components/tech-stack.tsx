@@ -25,8 +25,11 @@ export default function TechStack(props: TechStackProps) {
       id="tech-stack"
       className="pt-16 px-2 overflow-hidden space-y-2"
     >
-      <p className="text-4xl font-bold font-mono">Techstack:</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 p-4">
+      <p className="text-4xl font-bold font-mono text-center">My techstack:</p>
+      <Container
+        maxWidth="lg"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 p-4"
+      >
         <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center sm:col-span-2 md:col-span-1">
           <p className="font-mono text-xl font-semibold">Front-end</p>
           <p className="text-sm pb-4 pt-1">My bread and butter.</p>
@@ -95,7 +98,7 @@ export default function TechStack(props: TechStackProps) {
             </li>
           </ul>
         </article>
-      </div>
+      </Container>
     </Container>
   );
 }
