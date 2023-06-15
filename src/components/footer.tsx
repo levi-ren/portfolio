@@ -1,5 +1,4 @@
-import { SlEnvolope, SlSocialLinkedin } from "react-icons/sl";
-import { VscGithubAlt } from "react-icons/vsc";
+import { SlEnvolope, SlSocialGithub, SlSocialLinkedin } from "react-icons/sl";
 import Anchor from "./anchor";
 import Container from "./container";
 
@@ -25,7 +24,7 @@ export default function Footer(props: FooterProps) {
             aria-label="View my Github profile"
             className="inline-block"
           >
-            <VscGithubAlt className="h-6 w-6" />
+            <SlSocialGithub className="h-6 w-6" />
           </Anchor>
 
           <Anchor

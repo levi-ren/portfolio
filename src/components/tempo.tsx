@@ -37,7 +37,7 @@ export default function Tempo(props: TempoProps) {
           />
         </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
-          <SiReact className="h-6 w-6 text-blue-300" title="React JS" />
+          <SiReact className="h-6 w-6 text-sky-400" title="React JS" />
           <SiTailwindcss className="h-6 w-6 text-blue-500" title="Tailwind" />
           <SiReactquery className="h-6 w-6 text-rose-500" title="React Query" />
         </div>

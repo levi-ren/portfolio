@@ -1,4 +1,5 @@
-import { VscGithubAlt, VscLinkExternal } from "react-icons/vsc";
+import { SlSocialGithub } from "react-icons/sl";
+import { VscLinkExternal } from "react-icons/vsc";
 import { twMerge } from "tailwind-merge";
 import Anchor from "./anchor";
 
@@ -29,7 +30,7 @@ export default function ProjectNav({
           target="_blank"
           aria-label={`Project ${projectName} Github link`}
         >
-          <VscGithubAlt className="h-6 w-6" />
+          <SlSocialGithub className="h-6 w-6" />
         </Anchor>
       )}
       <Anchor

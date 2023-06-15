@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Nav from "@/components/nav";
 import Projects from "@/components/projects";
+import TechStack from "@/components/tech-stack";
 
 export const runtime = "edge";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Nav />
         <AboutMe />
+        <TechStack />
         <Experiences />
         <Projects />
         <Contact />
