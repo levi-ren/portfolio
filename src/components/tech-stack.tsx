@@ -29,9 +29,7 @@ export default function TechStack(props: TechStackProps) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 p-4">
         <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center sm:col-span-2 md:col-span-1">
           <p className="font-mono text-xl font-semibold">Front-end</p>
-          <p className="text-sm py-4">
-            I am a front-end developer by trade, and my current expertise.
-          </p>
+          <p className="text-sm pb-4 pt-1">My bread and butter.</p>
           <ul className="space-y-1 inline-block">
             <li className="flex gap-x-2 items-center ">
               <SiNextdotjs className="h-5 w-5" /> Next JS
@@ -45,7 +43,8 @@ export default function TechStack(props: TechStackProps) {
               Tailwind
             </li>
             <li className="flex gap-x-2 items-center ">
-              <SiTypescript className="h-5 w-5 text-blue-500" /> TypeScript
+              <SiTypescript className="h-5 w-5 text-blue-500" />
+              TypeScript
             </li>
             <li className="flex gap-x-2 items-center ">
               <SiJavascript className="h-5 w-5 text-yellow-300" />
@@ -63,8 +62,8 @@ export default function TechStack(props: TechStackProps) {
         </article>
         <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
           <p className="font-mono text-xl font-semibold">Back-end</p>
-          <p className="text-sm py-4">
-            Not my strongest suit, but have a good understanding.
+          <p className="text-sm pb-4 pt-1">
+            Aspiring, but not my strongest suit.
           </p>
           <ul className="space-y-1 inline-block">
             <li className="flex gap-x-2 items-center ">
@@ -80,7 +79,7 @@ export default function TechStack(props: TechStackProps) {
         </article>
         <article className="flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
           <p className="font-mono text-xl font-semibold">Tools & Platform</p>
-          <p className="text-sm py-4">Favorite tools to get things done.</p>
+          <p className="text-sm pb-4 pt-1">Kits to get things done.</p>
           <ul className="space-y-1 inline-block">
             <li className="flex gap-x-2 items-center ">
               <SiGit className="h-5 w-5 text-amber-600" /> Git

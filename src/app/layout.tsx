@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth dark">
       <body
-        className={`relative dark:bg-[#121212] bg-slate-50 font-medium  dark:text dark:text-white transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
+        className={`relative dark:bg-[#121212] bg-slate-50 font-medium  dark:text-white text-zinc-800 transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
       >
         {children}
       </body>

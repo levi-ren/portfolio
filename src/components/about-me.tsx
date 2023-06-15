@@ -32,7 +32,7 @@ export default function AboutMe(props: AboutMeProps) {
             APIs into functionality and mostly work with forms, inputs, and
             buttons.
           </p>
-          <p>Simply put - I turn coffe into code.</p>
+          <p>Basically a machine to turn coffee into code.</p>
         </div>
       </article>
     </Container>
