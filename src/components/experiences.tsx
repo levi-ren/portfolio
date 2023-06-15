@@ -1,3 +1,5 @@
+import { SiAngularjs, SiReact } from "react-icons/si";
+import { SlGraduation } from "react-icons/sl";
 import Container from "./container";
 
 interface ExperiencesProps {}
@@ -10,19 +12,25 @@ const Divider = () => {
 
 export default function Experiences(props: ExperiencesProps) {
   return (
-    <section id="experiences" className="pt-28 px-2">
-      <Container className="space-y-16">
-        <p className="text-7xl font-bold font-mono text-right">Work:</p>
-
-        <ol className="relative max-w-2xl m-auto pl-2">
-          <li className="relative border-l dark:border-slate-50/20 border-zinc-400 pl-8 pr-2 pt-2">
-            <time className="text-sm">January 2022</time>
+    <Container as="section" id="experiences" className="pt-28 px-2 space-y-16">
+      <p className="text-7xl font-bold font-mono">Work:</p>
+      <Container
+        as="ol"
+        className="relative before:content-[''] before:h-full before:bg-zinc-900 before:w-[3px] before:block before:absolute before:top-0 md:before:left-1/2 md:before:-translate-x-1/2 before:left-[26.5px] before:rounded-full before:dark:bg-white space-y-8"
+      >
+        <Container
+          as="li"
+          maxWidth="lg"
+          className="relative dark:border-slate-50/20 border-zinc-400 px-2 flex md:text-right gap-x-2 flex-row-reverse md:flex-row"
+        >
+          <div className="flex-1">
+            <time className="text-sm">January 2022 - Present</time>
             <h3 className="font-mono text-4xl">Senior Software Developer</h3>
             <p className="text-sm">• MDI Novare •</p>
             <Divider />
             <div className="text-sm space-y-2">
               React Developer
-              <ul className="list-disc pl-6">
+              <ul className="sm:p-2 list-disc md:list-none ml-4 md:ml-0">
                 <li>Develop new web-app features.</li>
                 <li>Translated UI/UX designs to HTML components.</li>
                 <li>Maintained and improved existing code base.</li>
@@ -36,18 +44,31 @@ export default function Experiences(props: ExperiencesProps) {
                 </li>
               </ul>
             </div>
-            <span className="bg-zinc-900 text-white dark:bg-white dark:text-black rounded-full p-1 -left-3 w-6 font-bold h-6 leading-none text-center absolute top-10">
-              3
-            </span>
-          </li>
-          <li className="relative border-l dark:border-slate-50/20 border-zinc-400 pl-8 pr-2 pt-16">
+          </div>
+
+          <span className="bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 rounded-full flex justify-center items-center mt-6 w-10 h-10 font-bold leading-none text-center ">
+            <SiReact className="h-7 w-7" />
+          </span>
+
+          <div className="flex-1 hidden md:block" />
+        </Container>
+        <Container
+          as="li"
+          maxWidth="lg"
+          className="relative dark:border-slate-50/20 border-zinc-400 px-2 flex gap-x-2 "
+        >
+          <div className="flex-1 hidden md:block" />
+          <span className="bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 rounded-full flex justify-center items-center mt-6 w-10 h-10 font-bold leading-none text-center ">
+            <SiAngularjs className="h-7 w-7" />
+          </span>
+          <div className="flex-1">
             <time className="text-sm">April 2020</time>
             <h3 className="font-mono text-4xl">Software Developer</h3>
             <p className="text-sm">• Yoonet •</p>
             <Divider />
             <div className="text-sm space-y-2">
               Angular Developer / Team Lead
-              <ul className="list-disc pl-6">
+              <ul className="sm:p-2 list-disc md:list-none ml-4 md:ml-0">
                 <li>Lead a team of 4 developers for an Australian client.</li>
                 <li>
                   Translated client&apos;s existing desktop app to a web-app.
@@ -58,30 +79,33 @@ export default function Experiences(props: ExperiencesProps) {
                 </li>
               </ul>
             </div>
-            <span className="text-white bg-zinc-900 rounded-full p-1 -left-3 w-6 font-bold h-6 leading-none text-center absolute top-24 g-zinc-900  dark:bg-white dark:text-black ">
-              2
-            </span>
-          </li>
-          <li className="relative border-l dark:border-slate-50/20 border-zinc-400 pl-8 pr-2 pt-16">
+          </div>
+        </Container>
+        <Container
+          as="li"
+          maxWidth="lg"
+          className="relative dark:border-slate-50/20 border-zinc-400 px-2 flex md:text-right gap-x-2  flex-row-reverse md:flex-row"
+        >
+          <div className="flex-1">
             <time className="text-sm">August 2019</time>
             <h3 className="font-mono text-4xl">Associate Software Developer</h3>
             <p className="text-sm">• Quantum Crowd •</p>
             <Divider />
             <div className="text-sm space-y-2">
               Web 3 developer - Corda / React and Angular Developer
-              <ul className="list-disc pl-6">
+              <ul className="sm:p-2 list-disc md:list-none ml-4 md:ml-0">
                 <li>Studied Corda and created Cordapps.</li>
                 <li>Studied React and Angular 2</li>
                 <li>Learned to integrate front-end to back-end apps</li>
               </ul>
             </div>
-
-            <span className="text-white bg-zinc-900 rounded-full p-1 -left-3 w-6 font-bold h-6 leading-none text-center absolute top-24 g-zinc-900  dark:bg-white dark:text-black ">
-              1
-            </span>
-          </li>
-        </ol>
+          </div>
+          <span className="bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 rounded-full flex justify-center items-center mt-6 w-10 h-10 font-bold leading-none text-center ">
+            <SlGraduation className="h-7 w-7" />
+          </span>
+          <div className="flex-1 hidden md:block" />
+        </Container>
       </Container>
-    </section>
+    </Container>
   );
 }
