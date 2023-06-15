@@ -5,7 +5,7 @@ export const links = [
     label: "Go to about me section",
   },
   {
-    name: "Work",
+    name: "Experience",
     href: "#experiences",
     label: "Go to work section",
   },

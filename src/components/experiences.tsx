@@ -12,7 +12,7 @@ const Divider = () => {
 
 export default function Experiences(props: ExperiencesProps) {
   return (
-    <Container as="section" id="experiences" className="pt-28 px-2 space-y-16">
+    <Container as="section" id="experiences" className="pt-28 px-2 space-y-8">
       <p className="text-7xl font-bold font-mono">Work:</p>
       <Container
         as="ol"
