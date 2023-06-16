@@ -12,7 +12,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
         <Anchor
           href="https://parcel-v2.vercel.app/"
           target="_blank"
-          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg transition-[border] duration-300"
           aria-label="Project Flixy demo link"
         >
           <Image

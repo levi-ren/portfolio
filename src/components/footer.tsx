@@ -6,7 +6,7 @@ interface FooterProps {}
 
 export default function Footer(props: FooterProps) {
   return (
-    <footer className="border-t dark:border-slate-50/20 border-zinc-400 py-16">
+    <footer className="border-t dark:border-slate-50/20 border-zinc-400 py-16  transition-[border] duration-300">
       <Container className="flex items-center justify-between px-2">
         <div className="space-x-4">
           <Anchor
@@ -36,7 +36,7 @@ export default function Footer(props: FooterProps) {
             <SlEnvolope className="h-6 w-6" />
           </Anchor>
         </div>
-        Levi Deang © {new Date().getFullYear()}
+        © Levi Deang {new Date().getFullYear()}
       </Container>
     </footer>
   );

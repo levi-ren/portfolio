@@ -24,7 +24,7 @@ export default function Portfolio(props: PortfolioProps) {
       <div className="flex-1 w-full ">
         <Anchor
           href="/"
-          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg transition-[border] duration-300"
           aria-label="Project Portfolio demo link"
         >
           <Image

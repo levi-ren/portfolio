@@ -12,7 +12,7 @@ export default function Parcel(props: ParcelProps) {
         <Anchor
           href="https://parcel-v2.vercel.app/"
           target="_blank"
-          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg transition-[border] duration-300"
           aria-label="Project Parcel demo link"
         >
           <Image
@@ -24,7 +24,7 @@ export default function Parcel(props: ParcelProps) {
         </Anchor>
         <div className="flex gap-x-2 items-center justify-center py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
-          <div className="p-[1px] rounded-full border dark:border-slate-50/20 border-slate-400">
+          <div className="p-[1px] rounded-full border dark:border-slate-50/20 border-slate-400 transition-[border] duration-300">
             <SiMongodb className="h-6 w-6 text-green-600" title="Mongo DB" />
           </div>
           <SiTailwindcss className="h-6 w-6 text-blue-500" title="Tailwind" />

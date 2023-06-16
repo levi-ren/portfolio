@@ -26,7 +26,7 @@ export default function Resume(props: ResumeProps) {
         <Anchor
           href="https://resume.levideang.dev/"
           target="_blank"
-          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg"
+          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg transition-[border] duration-300"
           aria-label="Project Resume demo link"
         >
           <Image

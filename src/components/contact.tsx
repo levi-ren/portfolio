@@ -17,7 +17,7 @@ export default function Contact(props: ContactProps) {
             <input
               id="name"
               name="name"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2"
+              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 transition-[border] duration-300"
               required
               placeholder=" "
             />
@@ -33,7 +33,7 @@ export default function Contact(props: ContactProps) {
             <input
               id="email"
               name="From"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500"
+              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 transition-[border] duration-300"
               required
               type="email"
               placeholder=" "
@@ -50,7 +50,7 @@ export default function Contact(props: ContactProps) {
             <input
               id="subject"
               name="Subject"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500"
+              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 transition-[border] duration-300"
               required
               placeholder=" "
             />
@@ -66,7 +66,7 @@ export default function Contact(props: ContactProps) {
             <textarea
               id="body"
               name="Body"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 resize-none h-40"
+              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 resize-none h-40 transition-[border] duration-300"
               required
               placeholder=" "
             />

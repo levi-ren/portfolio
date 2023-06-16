@@ -3,7 +3,7 @@
 import { useHydration } from "@/hooks/useHydration";
 import { useTheme } from "next-themes";
 import { useId } from "react";
-import { IoMoon, IoSunny } from "react-icons/io5";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
 
 interface DarkmodeSwitchProps {
@@ -18,7 +18,7 @@ const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
     <label
       htmlFor={id}
       className={twMerge(
-        "w-12 h-7  justify-between items-center cursor-pointer relative p-1 rounded-full border-slate-50/20 dark:border-white/10 border bg-zinc-900 hidden xs:flex",
+        "w-12 h-7  justify-between items-center cursor-pointer relative p-1 rounded-full border-slate-50/20 dark:border-slate-900/10 border hidden xs:flex  duration-300 dark:bg-zinc-800 bg-sky-500 bg-gradient-to-tl from-sky-500 via-sky-600 to-sky-700 dark:from-slate-800 dark:via-slate-700 dark:to-slate-600",
         !ready && "!opacity-0 !cursor-default",
         className
       )}
@@ -34,9 +34,9 @@ const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
         }}
         checked={theme !== "light"}
       />
-      <IoMoon className="text-zinc-50" />
-      <IoSunny className="text-yellow-400" />
-      <span className="absolute  bg-white h-5 w-5 rounded-full peer-checked:translate-x-5 transition-all" />
+      <FaMoon className="text-zinc-100" />
+      <FaSun className="text-yellow-400" />
+      <span className="absolute dark:bg-zinc-800 h-5 w-5 rounded-full peer-checked:translate-x-5 transition-all bg-white duration-300" />
     </label>
   );
 };

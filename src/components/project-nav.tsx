@@ -20,7 +20,7 @@ export default function ProjectNav({
     <nav className="flex items-center gap-x-2">
       <div
         className={twMerge(
-          "dark:border-slate-50/20 border-zinc-400 border-b w-full ",
+          "dark:border-slate-50/20 border-zinc-400 border-b w-full transition-[border] duration-300",
           right ? "" : "sm:hidden"
         )}
       />
@@ -42,7 +42,7 @@ export default function ProjectNav({
       </Anchor>
       <div
         className={twMerge(
-          "dark:border-slate-50/20 border-zinc-400 border-b w-full ",
+          "dark:border-slate-50/20 border-zinc-400 border-b w-full transition-[border] duration-300",
           !right ? "" : "sm:hidden"
         )}
       />
