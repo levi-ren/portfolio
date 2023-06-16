@@ -1,3 +1,4 @@
+import Body from "@/components/body";
 import { Metadata } from "next";
 import { Quicksand, Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
@@ -43,12 +44,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth dark">
-      <body
-        className={`relative dark:bg-[#121212] bg-slate-50 font-medium  dark:text-white text-zinc-800 transition-colors duration-300 ${quicksand.className} ${shadows.variable}`}
+    <html lang="en">
+      <Body
+        className={`relative dark:bg-[#121212] bg-slate-50 font-medium  dark:text-white text-zinc-800  ${quicksand.className} ${shadows.variable}`}
       >
         {children}
-      </body>
+      </Body>
     </html>
   );
 }
