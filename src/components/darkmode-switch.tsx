@@ -11,9 +11,16 @@ interface DarkmodeSwitchProps {
 }
 
 const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
-  const { setTheme, theme } = useTheme();
+  const { setTheme, theme, systemTheme } = useTheme();
   const ready = useHydration();
   const id = useId();
+  const isChecked = () => {
+    if (theme === "system") {
+      return systemTheme === "dark" ? true : false;
+    }
+
+    return theme === "dark" ? true : false;
+  };
   return (
     <label
       htmlFor={id}
@@ -32,7 +39,7 @@ const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
         onChange={(e) => {
           setTheme(e.target.checked ? "dark" : "light");
         }}
-        checked={theme !== "light"}
+        checked={isChecked()}
       />
       <FaMoon className="text-zinc-100" />
       <FaSun className="text-yellow-400" />
