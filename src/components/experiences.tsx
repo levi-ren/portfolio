@@ -13,7 +13,7 @@ const Divider = () => {
 export default function Experiences(props: ExperiencesProps) {
   return (
     <Container as="section" id="experiences" className="space-y-8 px-2 pt-28">
-      <p className="font-mono text-7xl font-bold">Work:</p>
+      <h3 className="font-mono text-7xl font-bold">Work:</h3>
       <Container
         as="ol"
         className="relative space-y-8 before:absolute before:left-[26.5px] before:top-0 before:block before:h-full before:w-[3px] before:rounded-full before:bg-zinc-900 before:transition-[background-color] before:duration-300 before:content-[''] before:dark:bg-white md:before:left-1/2 md:before:-translate-x-1/2"

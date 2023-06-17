@@ -7,20 +7,7 @@ interface PortfolioProps {}
 
 export default function Portfolio(props: PortfolioProps) {
   return (
-    <div className="flex flex-col-reverse items-center gap-4 text-right sm:flex-row">
-      <div className="w-full flex-1">
-        <h2 className="font-mono text-4xl">Portfolio</h2>
-        <h3 className="font-mono  text-lg">Showcase</h3>
-        <p className="py-6 text-sm ">
-          Comprehensive representation of my professional and creative work.
-        </p>
-        <ProjectNav
-          githubLink="https://github.com/levi-ren/portfolio"
-          demoLink="https://www.levideang.dev/"
-          right
-          projectName="Portfolio"
-        />
-      </div>
+    <div className="flex flex-col items-center gap-4 sm:flex-row">
       <div className="w-full flex-1 ">
         <Anchor
           href="/"
@@ -37,6 +24,23 @@ export default function Portfolio(props: PortfolioProps) {
         <div className="flex items-center justify-center gap-x-2 py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
         </div>
+      </div>
+
+      <div className="w-full flex-1 text-sm">
+        <h4 className="font-mono text-4xl">Portfolio</h4>
+        <em className="font-mono text-lg">Personal website</em>
+        <p className="pt-6">
+          Comprehensive representation of my professional and creative work.
+        </p>
+        <ul className="ml-6 list-disc p-2">
+          <li>Supports theme switching</li>
+          <li>Fully responsive on all devices</li>
+        </ul>
+        <ProjectNav
+          githubLink="https://github.com/levi-ren/portfolio"
+          demoLink="https://www.levideang.dev/"
+          projectName="Portfolio"
+        />
       </div>
     </div>
   );

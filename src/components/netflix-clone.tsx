@@ -10,7 +10,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
     <div className="flex flex-col items-center gap-4 sm:flex-row">
       <div className="w-full flex-1 ">
         <Anchor
-          href="https://parcel-v2.vercel.app/"
+          href="https://netflix-clone-five-drab.vercel.app"
           target="_blank"
           className="relative block aspect-video w-full shrink-0 rounded-lg border border-white/20 shadow-lg transition-[border] duration-300"
           aria-label="Project Flixy demo link"
@@ -28,13 +28,20 @@ export default function NetflixClone(props: NetflixCloneProps) {
         </div>
       </div>
 
-      <div className="w-full flex-1">
-        <h2 className="font-mono text-4xl">Flixy</h2>
-        <h3 className="font-mono  text-lg">Netflix Clone</h3>
-        <p className="py-6 text-sm">
+      <div className="w-full flex-1 text-sm">
+        <h4 className="font-mono text-4xl">Flixy</h4>
+        <em className="font-mono  text-lg">Netflix Clone</em>
+        <p className="pt-6">
           Visual clone of the ever popular Netflix, delivering an immersive
           collection of content across genres, anytime, anywhere.
         </p>
+        <ul className="ml-6 list-disc p-2">
+          <li>Displays movies and TV shows currently streaming on Netflix</li>
+          <li>1 : 1 visual copy</li>
+          <li>
+            <em>*Work in progress*</em>
+          </li>
+        </ul>
         <ProjectNav
           projectName="Flixy"
           githubLink="https://github.com/levi-ren/netflix-clone"

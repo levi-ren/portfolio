@@ -31,13 +31,20 @@ export default function Parcel(props: ParcelProps) {
         </div>
       </div>
 
-      <div className="w-full flex-1">
-        <h2 className="font-mono text-4xl">Parcel</h2>
-        <h3 className="font-mono  text-lg">eCommerce</h3>
-        <p className="py-6 text-sm">
+      <div className="w-full flex-1  text-sm">
+        <h4 className="font-mono text-4xl">Parcel</h4>
+        <em className="font-mono text-lg">eCommerce</em>
+        <p className="pt-6">
           Rich and responsive e-commerce platform with a variety of products to
           choose from.
         </p>
+        <ul className="ml-6 list-disc p-2">
+          <li>Fullstack application using MongoDB</li>
+          <li>Supports authentication via Next-Auth</li>
+          <li>
+            <em>*Work in progress*</em>
+          </li>
+        </ul>
         <ProjectNav
           projectName="Parcel"
           demoLink="https://parcel-v2.vercel.app/"

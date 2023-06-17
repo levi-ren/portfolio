@@ -11,7 +11,7 @@ export default function Projects(props: ProjectsProps) {
   return (
     <section id="projects" className="px-2 pt-28">
       <Container className="space-y-16">
-        <p className="font-mono text-7xl font-bold">Projects:</p>
+        <h3 className="font-mono text-7xl font-bold">Projects:</h3>
         <Portfolio />
         <Parcel />
         <Tempo />

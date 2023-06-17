@@ -7,21 +7,7 @@ interface ResumeProps {}
 
 export default function Resume(props: ResumeProps) {
   return (
-    <div className="flex flex-col-reverse items-center gap-4 text-right sm:flex-row">
-      <div className="w-full flex-1">
-        <h2 className="font-mono text-4xl">Resume</h2>
-        <h3 className="font-mono  text-lg">Digital Abstract</h3>
-        <p className="py-6 text-sm ">
-          Simple, consice, and elegant. A digital version of my traditional
-          resume.
-        </p>
-        <ProjectNav
-          githubLink="https://github.com/levi-ren/resume"
-          demoLink="https://resume.levideang.dev/"
-          projectName="Resume"
-          right
-        />
-      </div>
+    <div className="flex flex-col items-center gap-4 sm:flex-row">
       <div className="w-full flex-1 ">
         <Anchor
           href="https://resume.levideang.dev/"
@@ -40,6 +26,23 @@ export default function Resume(props: ResumeProps) {
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
           <SiTailwindcss className="h-6 w-6 text-blue-500" title="Tailwind" />
         </div>
+      </div>
+
+      <div className="w-full flex-1 text-sm">
+        <h4 className="font-mono text-4xl">Resume</h4>
+        <em className="font-mono  text-lg">Digital Abstract</em>
+        <p className="pt-6">
+          Simple and consice. A digital version of my traditional resume.
+        </p>
+        <ul className="ml-6 list-disc p-2">
+          <li>Responsive documentation</li>
+          <li>Downloadable PDF version</li>
+        </ul>
+        <ProjectNav
+          githubLink="https://github.com/levi-ren/resume"
+          demoLink="https://resume.levideang.dev/"
+          projectName="Resume"
+        />
       </div>
     </div>
   );

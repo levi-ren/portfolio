@@ -7,7 +7,7 @@ export default function AboutMe(props: AboutMeProps) {
     <Container as="section" id="about-me" className="px-2 pt-28 text-justify">
       <article className="max-w-md space-y-2">
         <div className="space-y-2 border-b border-zinc-400 pb-2 text-sm transition-[border] duration-300 dark:border-slate-50/20">
-          <p className="font-mono text-7xl font-bold">Levi</p>
+          <h3 className="font-mono text-7xl font-bold">Levi</h3>
           <em>/ ˈlɛ vi / noun:</em>
           <ul className="ml-4 list-disc pl-4">
             <li>a lover of [iced] coffee</li>
