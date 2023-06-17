@@ -46,7 +46,7 @@ const Form = ({ children }: FormProps) => {
         {children}
 
         <button
-          className="m-auto flex h-[50px] w-[150px] items-center justify-center rounded-full border border-black/70 text-xs transition-[border] duration-300 dark:border-slate-50/20"
+          className="m-auto flex h-[50px] w-[150px] items-center justify-center rounded-full border-2 border-black/70 text-xs transition-[border] duration-300 dark:border-slate-50/20"
           disabled={loading}
         >
           {loading ? (
