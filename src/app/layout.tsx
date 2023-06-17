@@ -1,4 +1,5 @@
 import Body from "@/components/body";
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Quicksand, Shadows_Into_Light } from "next/font/google";
 import "./globals.css";
@@ -49,6 +50,7 @@ export default function RootLayout({
         className={`relative bg-slate-100 font-medium text-zinc-800  dark:bg-[#121212] dark:text-white  ${quicksand.className} ${shadows.variable}`}
       >
         {children}
+        <Analytics />
       </Body>
     </html>
   );
