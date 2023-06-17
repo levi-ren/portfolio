@@ -21,28 +21,22 @@ export default function Experiences(props: ExperiencesProps) {
         <Container
           as="li"
           maxWidth="lg"
-          className="relative flex flex-row-reverse gap-x-2 border-zinc-400 px-2 transition-[border] duration-300 dark:border-slate-50/20 md:flex-row md:text-right"
+          className="relative flex flex-row-reverse gap-x-2 border-zinc-400 px-2 transition-[border] duration-300 after:absolute after:left-64 after:top-[91px] after:z-20 after:h-[2px] after:w-20 after:bg-gradient-to-l  after:from-transparent after:via-sky-500 after:to-transparent after:transition-all after:content-[''] hover:after:left-32 dark:border-slate-50/20 dark:after:via-rose-500 md:flex-row md:text-right"
         >
           <div className="flex-1">
             <time className="text-sm">January 2022 - Present</time>
-            <h3 className="font-mono text-4xl">Senior Software Developer</h3>
+            <h3 className="font-mono text-4xl">Lead Developer</h3>
             <p className="text-sm">• MDI Novare •</p>
             <Divider />
             <div className="space-y-2 text-sm">
               React Developer
-              <ul className="ml-4 list-disc sm:p-2 md:ml-0 md:list-none">
-                <li>Develop new web-app features.</li>
-                <li>Translated UI/UX designs to HTML components.</li>
-                <li>Maintained and improved existing code base.</li>
-                <li>
-                  Worked closely with other developers and other team members to
-                  locate and fix issues.
-                </li>
-                <li>
-                  Discuss and estimate user stories with team members and
-                  client.
-                </li>
-              </ul>
+              <p className="ml-[unset] max-w-sm sm:p-2 md:ml-auto">
+                Developed high quality production code for a number of clients
+                and worked closely with techleads and project owners and
+                provided technical solutions to fulfill business requirements.
+                Also lead front-end development through close collaborations,
+                knowledge transfers, and mentorship.
+              </p>
             </div>
           </div>
 
@@ -68,16 +62,12 @@ export default function Experiences(props: ExperiencesProps) {
             <Divider />
             <div className="space-y-2 text-sm">
               Angular Developer / Team Lead
-              <ul className="ml-4 list-disc sm:p-2 md:ml-0 md:list-none">
-                <li>Lead a team of 4 developers for an Australian client.</li>
-                <li>
-                  Translated client&apos;s existing desktop app to a web-app.
-                </li>
-                <li>
-                  Created, maintained, and integrated new features to the
-                  web-app.
-                </li>
-              </ul>
+              <p className="ml-[unset] max-w-sm sm:p-2 md:mr-auto">
+                Translated client&apos;s legacy desktop app to a robust web
+                application; and lead a team of developers and provided
+                mentorship in composing web components. Mostly maintained said
+                application and added new high quality features.
+              </p>
             </div>
           </div>
         </Container>
@@ -93,11 +83,11 @@ export default function Experiences(props: ExperiencesProps) {
             <Divider />
             <div className="space-y-2 text-sm">
               Web 3 developer - Corda / React and Angular Developer
-              <ul className="ml-4 list-disc sm:p-2 md:ml-0 md:list-none">
-                <li>Studied Corda and created Cordapps.</li>
-                <li>Studied React and Angular 2</li>
-                <li>Learned to integrate front-end to back-end apps</li>
-              </ul>
+              <p className="ml-[unset] max-w-sm sm:p-2 md:ml-auto">
+                Newbie developer. Learned the basics of software development,
+                including both front-end and back-end development. Created
+                meaningful case study projects in integrating both ends.
+              </p>
             </div>
           </div>
           <span className="mt-6 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-center font-bold leading-none text-white transition-[background-color] duration-300 dark:bg-white dark:text-zinc-900">
