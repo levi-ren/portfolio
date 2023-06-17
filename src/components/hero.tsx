@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="px-2 text-center min-h-screen flex flex-col justify-center items-center"
+      className="flex min-h-screen flex-col items-center justify-center px-2 text-center"
     >
-      <Logo className="h-[40vw] w-[40vw] absolute text-zinc-300 dark:text-zinc-900 duration-75" />
-      <div className="text-5xl sm:text-7xl font-mono relative z-10">
-        <h1 className="font-bold text-7xl">Levi Deang</h1>
+      <Logo className="absolute h-[40vw] w-[40vw] text-zinc-300 duration-75 dark:text-zinc-900" />
+      <div className="relative z-10 font-mono text-5xl sm:text-7xl">
+        <h1 className="text-7xl font-bold">Levi Deang</h1>
         <h2 className="text-xl">Front-end developer</h2>
       </div>
     </section>

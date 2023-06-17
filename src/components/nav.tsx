@@ -9,13 +9,13 @@ interface NavProps {}
 
 export default function Nav(props: NavProps) {
   return (
-    <nav className="py-4 px-2  dark:text-white backdrop-blur shadow-md dark:shadow-white-md  text-sm sticky top-0 z-20 mt-16">
-      <Container className="flex justify-between items-center ">
+    <nav className="sticky top-0  z-20 mt-16 px-2 py-4  text-sm shadow-md backdrop-blur dark:text-white dark:shadow-white-md">
+      <Container className="flex items-center justify-between ">
         <Anchor href="/" aria-label="Home link">
           <Logo width={40} height={40} className="duration-75" />
         </Anchor>
 
-        <div className="space-x-4 hidden xs:block">
+        <div className="hidden space-x-4 xs:block">
           {links.map((link) => (
             <Anchor key={link.name} href={link.href} aria-label={link.label}>
               {link.name}

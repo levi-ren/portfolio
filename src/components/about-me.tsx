@@ -4,12 +4,12 @@ interface AboutMeProps {}
 
 export default function AboutMe(props: AboutMeProps) {
   return (
-    <Container as="section" id="about-me" className="pt-28 px-2 text-justify">
+    <Container as="section" id="about-me" className="px-2 pt-28 text-justify">
       <article className="max-w-md space-y-2">
-        <div className="text-sm border-b dark:border-slate-50/20 border-zinc-400 pb-2 space-y-2 transition-[border] duration-300">
-          <p className="text-7xl font-bold font-mono">Levi</p>
+        <div className="space-y-2 border-b border-zinc-400 pb-2 text-sm transition-[border] duration-300 dark:border-slate-50/20">
+          <p className="font-mono text-7xl font-bold">Levi</p>
           <em>/ ˈlɛ vi / noun:</em>
-          <ul className="list-disc pl-4 ml-4">
+          <ul className="ml-4 list-disc pl-4">
             <li>a lover of [iced] coffee</li>
             <li>hardcore chocolate addict</li>
             <li>developer by day, gamer at night</li>
@@ -18,7 +18,7 @@ export default function AboutMe(props: AboutMeProps) {
         <div className="space-y-2 px-4">
           <p>
             I am Arron Levi Ren Deang, most people call me
-            <span className="font-mono font-bold text-lg"> Levi.</span>
+            <span className="font-mono text-lg font-bold"> Levi.</span>
           </p>
           <p>
             A very passionate front-end developer with 4 years of experience.

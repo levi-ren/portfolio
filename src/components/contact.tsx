@@ -5,10 +5,10 @@ interface ContactProps {}
 
 export default function Contact(props: ContactProps) {
   return (
-    <section id="contact" className="pt-28 px-2">
+    <section id="contact" className="px-2 pt-28">
       <Container className="">
-        <p className="font-mono text-7xl text-right">Contact:</p>
-        <p className="text-right text-xl font-mono">
+        <p className="text-right font-mono text-7xl">Contact:</p>
+        <p className="text-right font-mono text-xl">
           Interested? Feel free to say hi.
         </p>
 
@@ -17,13 +17,13 @@ export default function Contact(props: ContactProps) {
             <input
               id="name"
               name="name"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 transition-[border] duration-300"
+              className="peer w-full border-b-2 border-black/70   bg-transparent px-2 pb-2 outline-none transition-[border] duration-300 placeholder:text-sm dark:border-slate-50/20"
               required
               placeholder=" "
             />
             <label
               htmlFor="name"
-              className="text-sm absolute left-2 peer-focus:-translate-y-6 transition-transform peer-[:not(:placeholder-shown)]:-translate-y-6 after:content-['✱'] after:text-rose-500"
+              className="absolute left-2 text-sm transition-transform after:text-rose-500 after:content-['✱'] peer-focus:-translate-y-6 peer-[:not(:placeholder-shown)]:-translate-y-6"
             >
               Name{" "}
             </label>
@@ -33,14 +33,14 @@ export default function Contact(props: ContactProps) {
             <input
               id="email"
               name="From"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 transition-[border] duration-300"
+              className="peer w-full border-b-2 border-black/70   bg-transparent px-2 pb-2 outline-none transition-[border] duration-300 placeholder:text-sm dark:border-slate-50/20 invalid:[&:not(:placeholder-shown)]:border-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500"
               required
               type="email"
               placeholder=" "
             />
             <label
               htmlFor="email"
-              className="text-sm absolute left-2 peer-focus:-translate-y-6 transition-transform peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 after:content-['✱'] after:text-rose-500"
+              className="absolute left-2 text-sm transition-transform after:text-rose-500 after:content-['✱'] peer-focus:-translate-y-6 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500"
             >
               Email{" "}
             </label>
@@ -50,13 +50,13 @@ export default function Contact(props: ContactProps) {
             <input
               id="subject"
               name="Subject"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 transition-[border] duration-300"
+              className="peer w-full border-b-2 border-black/70   bg-transparent px-2 pb-2 outline-none transition-[border] duration-300 placeholder:text-sm dark:border-slate-50/20 invalid:[&:not(:placeholder-shown)]:border-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500"
               required
               placeholder=" "
             />
             <label
               htmlFor="subject"
-              className="text-sm absolute left-2 peer-focus:-translate-y-6 transition-transform peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 after:content-['✱'] after:text-rose-500"
+              className="absolute left-2 text-sm transition-transform after:text-rose-500 after:content-['✱'] peer-focus:-translate-y-6 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500"
             >
               Subject{" "}
             </label>
@@ -66,13 +66,13 @@ export default function Contact(props: ContactProps) {
             <textarea
               id="body"
               name="Body"
-              className="w-full bg-transparent outline-none border-b-2   dark:border-slate-50/20 border-black/70 px-2 peer placeholder:text-sm pb-2 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:border-rose-500 resize-none h-40 transition-[border] duration-300"
+              className="peer h-40 w-full resize-none   border-b-2 border-black/70 bg-transparent px-2 pb-2 outline-none transition-[border] duration-300 placeholder:text-sm dark:border-slate-50/20 invalid:[&:not(:placeholder-shown)]:border-rose-500 invalid:[&:not(:placeholder-shown)]:text-rose-700 invalid:[&:not(:placeholder-shown)]:dark:border-rose-500 invalid:[&:not(:placeholder-shown)]:dark:text-rose-500"
               required
               placeholder=" "
             />
             <label
               htmlFor="body"
-              className="text-sm absolute left-2 peer-focus:-translate-y-6 transition-transform peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 after:content-['✱'] after:text-rose-500"
+              className="absolute left-2 text-sm transition-transform after:text-rose-500 after:content-['✱'] peer-focus:-translate-y-6 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:invalid:text-rose-700 peer-[:not(:placeholder-shown)]:invalid:dark:text-rose-500"
             >
               Message{" "}
             </label>

@@ -7,11 +7,11 @@ interface PortfolioProps {}
 
 export default function Portfolio(props: PortfolioProps) {
   return (
-    <div className="flex flex-col-reverse sm:flex-row gap-4 items-center text-right">
-      <div className="flex-1 w-full">
-        <h2 className="text-4xl font-mono">Portfolio</h2>
-        <h3 className="text-lg  font-mono">Showcase</h3>
-        <p className="text-sm py-6 ">
+    <div className="flex flex-col-reverse items-center gap-4 text-right sm:flex-row">
+      <div className="w-full flex-1">
+        <h2 className="font-mono text-4xl">Portfolio</h2>
+        <h3 className="font-mono  text-lg">Showcase</h3>
+        <p className="py-6 text-sm ">
           Comprehensive representation of my professional and creative work.
         </p>
         <ProjectNav
@@ -21,20 +21,20 @@ export default function Portfolio(props: PortfolioProps) {
           projectName="Portfolio"
         />
       </div>
-      <div className="flex-1 w-full ">
+      <div className="w-full flex-1 ">
         <Anchor
           href="/"
-          className="relative block w-full aspect-video rounded-lg border border-white/20 shrink-0 shadow-lg transition-[border] duration-300"
+          className="relative block aspect-video w-full shrink-0 rounded-lg border border-white/20 shadow-lg transition-[border] duration-300"
           aria-label="Project Portfolio demo link"
         >
           <Image
             src="/portfolio.png"
             alt="portfolio"
             fill
-            className="object-contain rounded-lg"
+            className="rounded-lg object-contain"
           />
         </Anchor>
-        <div className="flex gap-x-2 items-center justify-center py-2">
+        <div className="flex items-center justify-center gap-x-2 py-2">
           <SiNextdotjs className="h-6 w-6" title="Next JS" />
         </div>
       </div>

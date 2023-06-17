@@ -6,7 +6,7 @@ interface FooterProps {}
 
 export default function Footer(props: FooterProps) {
   return (
-    <footer className="border-t dark:border-slate-50/20 border-zinc-400 py-16  transition-[border] duration-300">
+    <footer className="border-t border-zinc-400 py-16 transition-[border]  duration-300 dark:border-slate-50/20">
       <Container className="flex items-center justify-between px-2">
         <div className="space-x-4">
           <Anchor

@@ -42,11 +42,11 @@ const Form = ({ children }: FormProps) => {
 
   return (
     <>
-      <form onSubmit={onSubmit} className="max-w-md m-auto py-8 space-y-8">
+      <form onSubmit={onSubmit} className="m-auto max-w-md space-y-8 py-8">
         {children}
 
         <button
-          className="text-xs rounded-full border dark:border-slate-50/20 border-black/70 h-[50px] w-[150px] justify-center m-auto flex items-center transition-[border] duration-300"
+          className="m-auto flex h-[50px] w-[150px] items-center justify-center rounded-full border border-black/70 text-xs transition-[border] duration-300 dark:border-slate-50/20"
           disabled={loading}
         >
           {loading ? (
@@ -59,11 +59,11 @@ const Form = ({ children }: FormProps) => {
 
       <dialog
         ref={dialog}
-        className="backdrop:bg-black/70 backdrop:backdrop-blur-sm    dark:text-white bg-transparent p-0 font-mono text-xl transition-all animate-fade "
+        className="animate-fade bg-transparent    p-0 font-mono text-xl transition-all backdrop:bg-black/70 backdrop:backdrop-blur-sm dark:text-white "
         onClick={(e) => e.currentTarget.close()}
       >
         <div
-          className="space-y-6 rounded shadow-lg max-w-md w-full bg-white/90  dark:bg-black/90 backdrop-blur-3xl p-4 pt-16 border border-slate-50/20"
+          className="w-full max-w-md space-y-6 rounded border border-slate-50/20  bg-white/90 p-4 pt-16 shadow-lg backdrop-blur-3xl dark:bg-black/90"
           onClick={(e) => e.stopPropagation()}
         >
           <p>Hi there, {name}!</p>
@@ -96,7 +96,7 @@ const Form = ({ children }: FormProps) => {
           )}
           <p>-Levi</p>
 
-          <form method="dialog" className="absolute top-2 right-2 !m-0 ">
+          <form method="dialog" className="absolute right-2 top-2 !m-0 ">
             <button>
               <IoCloseOutline className="h-6 w-6" />
             </button>

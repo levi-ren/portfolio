@@ -23,77 +23,77 @@ export default function TechStack(props: TechStackProps) {
     <Container
       as="section"
       id="tech-stack"
-      className="pt-16 px-2 overflow-hidden space-y-2"
+      className="space-y-2 overflow-hidden px-2 pt-16"
     >
-      <p className="text-4xl font-bold font-mono text-center">My techstack:</p>
+      <p className="text-center font-mono text-4xl font-bold">My techstack:</p>
       <Container
         maxWidth="lg"
-        className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:grid-cols-3 p-4"
+        className="grid grid-cols-1 gap-2 p-4 sm:grid-cols-2 md:grid-cols-3"
       >
-        <article className=" transition-[border] duration-300 flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center sm:col-span-2 md:col-span-1">
+        <article className=" flex-1 rounded-xl border border-zinc-400 p-4 text-center transition-[border] duration-300 dark:border-slate-50/20 sm:col-span-2 md:col-span-1">
           <p className="font-mono text-xl font-semibold">Front-end</p>
-          <p className="text-sm pb-4 pt-1">My bread and butter.</p>
-          <ul className="space-y-1 inline-block">
-            <li className="flex gap-x-2 items-center ">
+          <p className="pb-4 pt-1 text-sm">My bread and butter.</p>
+          <ul className="inline-block space-y-1">
+            <li className="flex items-center gap-x-2 ">
               <SiNextdotjs className="h-5 w-5" /> Next JS
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiReact className="h-5 w-5 text-sky-400" />
               React JS
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiTailwindcss className="h-5 w-5 text-blue-500" />
               Tailwind
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiTypescript className="h-5 w-5 text-blue-500" />
               TypeScript
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiJavascript className="h-5 w-5 text-yellow-300" />
               JavaScript
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiHtml5 className="h-5 w-5  text-orange-500" />
               HTML
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiCss3 className="h-5 w-5 text-sky-600" />
               CSS
             </li>
           </ul>
         </article>
-        <article className=" transition-[border] duration-300 flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
+        <article className=" flex-1 rounded-xl border border-zinc-400 p-4 text-center transition-[border] duration-300 dark:border-slate-50/20">
           <p className="font-mono text-xl font-semibold">Back-end</p>
-          <p className="text-sm pb-4 pt-1">
+          <p className="pb-4 pt-1 text-sm">
             Aspiring, but not my strongest suit.
           </p>
-          <ul className="space-y-1 inline-block">
-            <li className="flex gap-x-2 items-center ">
+          <ul className="inline-block space-y-1">
+            <li className="flex items-center gap-x-2 ">
               <SiNodedotjs className="h-5 w-5 text-green-500" /> Node JS
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiExpress className="h-5 w-5" /> Express JS
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiMongodb className="h-5 w-5 text-green-600" /> MongoDB
             </li>
           </ul>
         </article>
-        <article className=" transition-[border] duration-300 flex-1 p-4 border dark:border-slate-50/20 border-zinc-400 rounded-xl text-center">
+        <article className=" flex-1 rounded-xl border border-zinc-400 p-4 text-center transition-[border] duration-300 dark:border-slate-50/20">
           <p className="font-mono text-xl font-semibold">Tools & Platform</p>
-          <p className="text-sm pb-4 pt-1">Favorite kits to get things done.</p>
-          <ul className="space-y-1 inline-block">
-            <li className="flex gap-x-2 items-center ">
+          <p className="pb-4 pt-1 text-sm">Favorite kits to get things done.</p>
+          <ul className="inline-block space-y-1">
+            <li className="flex items-center gap-x-2 ">
               <SiGit className="h-5 w-5 text-amber-600" /> Git
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SlSocialGithub className="h-5 w-5" /> GitHub
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiVercel className="h-5 w-5" /> Vercel
             </li>
-            <li className="flex gap-x-2 items-center ">
+            <li className="flex items-center gap-x-2 ">
               <SiJirasoftware className="h-5 w-5 text-blue-600" /> Jira
             </li>
           </ul>

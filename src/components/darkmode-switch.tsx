@@ -18,14 +18,14 @@ const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
     <label
       htmlFor={id}
       className={twMerge(
-        "w-12 h-7  justify-between items-center cursor-pointer relative p-1 rounded-full border-slate-50/20 dark:border-slate-900/10 border hidden xs:flex  duration-300 dark:bg-zinc-800 bg-sky-500 bg-gradient-to-tl from-sky-500 via-sky-600 to-sky-700 dark:from-slate-800 dark:via-slate-700 dark:to-slate-600",
-        !ready && "!opacity-0 !cursor-default",
+        "relative hidden  h-7 w-12 cursor-pointer items-center justify-between rounded-full border border-slate-50/20 bg-sky-500 bg-gradient-to-tl from-sky-500  via-sky-600 to-sky-700 p-1 duration-300 dark:border-slate-900/10 dark:bg-zinc-800 dark:from-slate-800 dark:via-slate-700 dark:to-slate-600 xs:flex",
+        !ready && "!cursor-default !opacity-0",
         className
       )}
     >
       <input
         type="checkbox"
-        className="opacity-0 absolute peer"
+        className="peer absolute opacity-0"
         id={id}
         disabled={!ready}
         aria-label="dark mode switch"
@@ -36,7 +36,7 @@ const DarkmodeSwitch = ({ className }: DarkmodeSwitchProps) => {
       />
       <FaMoon className="text-zinc-100" />
       <FaSun className="text-yellow-400" />
-      <span className="absolute dark:bg-zinc-800 h-5 w-5 rounded-full peer-checked:translate-x-5 transition-all bg-white duration-300" />
+      <span className="absolute h-5 w-5 rounded-full bg-white transition-all duration-300 peer-checked:translate-x-5 dark:bg-zinc-800" />
     </label>
   );
 };

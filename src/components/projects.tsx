@@ -9,9 +9,9 @@ interface ProjectsProps {}
 
 export default function Projects(props: ProjectsProps) {
   return (
-    <section id="projects" className="pt-28 px-2">
+    <section id="projects" className="px-2 pt-28">
       <Container className="space-y-16">
-        <p className="text-7xl font-bold font-mono">Projects:</p>
+        <p className="font-mono text-7xl font-bold">Projects:</p>
         <Portfolio />
         <Parcel />
         <Tempo />

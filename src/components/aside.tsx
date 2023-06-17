@@ -23,12 +23,12 @@ const Aside = (props: AsideProps) => {
     <aside
       id="menu"
       className={twMerge(
-        "fixed xs:hidden bg-white/50 dark:bg-[#111]/50 backdrop-blur-lg top-0 z-30 h-full flex flex-col justify-center items-center gap-y-4 transition-all overflow-hidden",
+        "fixed top-0 z-30 flex h-full flex-col items-center justify-center gap-y-4 overflow-hidden bg-white/50 backdrop-blur-lg transition-all dark:bg-[#111]/50 xs:hidden",
         !isOpen ? "w-full " : "w-0"
       )}
     >
       <button
-        className={twMerge("active:scale-[1.05] absolute top-4 right-4")}
+        className={twMerge("absolute right-4 top-4 active:scale-[1.05]")}
         aria-label="close menu button"
         onClick={onClick}
       >
@@ -39,13 +39,13 @@ const Aside = (props: AsideProps) => {
           key={link.name}
           onClick={onClick}
           aria-label={link.label}
-          className="hover:text-base transition-[font-size]"
+          className="transition-[font-size] hover:text-base"
           href={link.href}
         >
           {link.name}
         </Anchor>
       ))}
-      <DarkmodeSwitch className="flex absolute bottom-4" />
+      <DarkmodeSwitch className="absolute bottom-4 flex" />
     </aside>
   );
 };

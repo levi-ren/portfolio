@@ -13,7 +13,7 @@ const MenuButton = (props: MenuButtonProps) => {
   return (
     <button
       className={twMerge(
-        "xs:hidden active:scale-[1.05] ov",
+        "ov active:scale-[1.05] xs:hidden",
         !ready && "hidden"
       )}
       aria-label="open menu button"
