@@ -19,6 +19,7 @@ export default function NetflixClone(props: NetflixCloneProps) {
             src="/netflix-clone.png"
             alt="netflix-clone"
             fill
+            title="Flixy Snapshot"
             className="rounded-lg object-contain"
           />
         </Anchor>

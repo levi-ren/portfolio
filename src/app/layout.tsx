@@ -17,24 +17,27 @@ const shadows = Shadows_Into_Light({
   weight: "400",
 });
 
+const description =
+  "Welcome to my portfolio, where I share my journey as a software engineer. Explore a diverse collection of my coding projects, software designs, and technical expertise. From sleek user interfaces to robust backend systems, witness the practical application of my skills. Get a glimpse into my problem-solving approach, as I tackle real-world challenges through elegant solutions. Whether it's web development, or algorithmic solutions, you'll find a range of projects that highlight my passion for creating efficient and user-friendly software. Join me on this digital adventure as we navigate the realms of code and innovation together.";
+
 export const metadata: Metadata = {
   title: "Levi Deang | Senior Software Engineer",
-  description:
-    "Comprehensive representation of my professional and creative work.",
+  description,
   applicationName: "Portfolio",
+  alternates: {
+    canonical: "https://levideang.dev",
+  },
   openGraph: {
     title: "Portfolio",
-    description:
-      "Comprehensive representation of my professional and creative work.",
-    url: "https://www.levideang.dev",
+    description,
+    url: "https://levideang.dev",
     images: "/portfolio.png",
   },
   twitter: {
     title: "Portfolio",
-    description:
-      "Comprehensive representation of my professional and creative work.",
+    description,
     card: "summary_large_image",
-    site: "https://www.levideang.dev",
+    site: "https://levideang.dev",
     images: "/portfolio.png",
   },
   other: {

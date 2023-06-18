@@ -19,6 +19,7 @@ export default function Resume(props: ResumeProps) {
             src="/resume.png"
             alt="resume"
             fill
+            title="Resume Snapshot"
             className="rounded-lg object-contain"
           />
         </Anchor>

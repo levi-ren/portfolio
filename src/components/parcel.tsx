@@ -19,6 +19,7 @@ export default function Parcel(props: ParcelProps) {
             src="/parcel.png"
             alt="Parcel"
             fill
+            title="Parcel Snapshot"
             className="rounded-lg object-contain"
           />
         </Anchor>

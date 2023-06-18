@@ -18,6 +18,7 @@ export default function Portfolio(props: PortfolioProps) {
             src="/portfolio.png"
             alt="portfolio"
             fill
+            title="Portfolio Snapshot"
             className="rounded-lg object-contain"
           />
         </Anchor>

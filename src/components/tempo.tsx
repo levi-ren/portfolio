@@ -19,6 +19,7 @@ export default function Tempo(props: TempoProps) {
             src="/tempo.png"
             alt="tempo"
             fill
+            title="Tempo Snapshot"
             className="rounded-lg object-contain"
           />
         </Anchor>
