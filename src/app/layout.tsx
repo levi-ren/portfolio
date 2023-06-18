@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     site: "https://www.levideang.dev",
     images: "/portfolio.png",
   },
+  other: {
+    "darkreader-lock": "lock",
+  },
 };
 
 export default function RootLayout({
