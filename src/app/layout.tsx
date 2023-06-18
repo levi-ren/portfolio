@@ -18,7 +18,7 @@ const shadows = Shadows_Into_Light({
 });
 
 export const metadata: Metadata = {
-  title: "Levi Deang",
+  title: "Levi Deang | Senior Software Engineer",
   description:
     "Comprehensive representation of my professional and creative work.",
   applicationName: "Portfolio",
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <Body
-        className={`relative bg-slate-200 font-medium text-zinc-800  dark:bg-[#121212] dark:text-white  ${quicksand.className} ${shadows.variable}`}
+        className={`relative bg-[#fafafa] font-medium text-zinc-800  dark:bg-[#121212] dark:text-white  ${quicksand.className} ${shadows.variable}`}
       >
         {children}
         <Analytics />
