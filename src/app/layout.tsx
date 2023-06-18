@@ -20,24 +20,27 @@ const shadows = Shadows_Into_Light({
 const description =
   "Welcome to my portfolio, where I share my journey as a software engineer. Explore a diverse collection of my coding projects, software designs, and technical expertise. Join me on this digital adventure as we navigate the realms of code and innovation together.";
 
+const url = "https://levideang.dev";
+
 export const metadata: Metadata = {
   title: "Levi Deang | Senior Software Engineer",
   description,
+  metadataBase: new URL(url),
   applicationName: "Portfolio",
   alternates: {
-    canonical: "https://levideang.dev",
+    canonical: "/",
   },
   openGraph: {
     title: "Portfolio",
     description,
-    url: "https://levideang.dev",
+    url,
     images: "/portfolio.png",
   },
   twitter: {
     title: "Portfolio",
     description,
     card: "summary_large_image",
-    site: "https://levideang.dev",
+    site: url,
     images: "/portfolio.png",
   },
   other: {
