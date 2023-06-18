@@ -18,7 +18,7 @@ const shadows = Shadows_Into_Light({
 });
 
 const description =
-  "Welcome to my portfolio, where I share my journey as a software engineer. Explore a diverse collection of my coding projects, software designs, and technical expertise. From sleek user interfaces to robust backend systems, witness the practical application of my skills. Get a glimpse into my problem-solving approach, as I tackle real-world challenges through elegant solutions. Whether it's web development, or algorithmic solutions, you'll find a range of projects that highlight my passion for creating efficient and user-friendly software. Join me on this digital adventure as we navigate the realms of code and innovation together.";
+  "Welcome to my portfolio, where I share my journey as a software engineer. Explore a diverse collection of my coding projects, software designs, and technical expertise. Join me on this digital adventure as we navigate the realms of code and innovation together.";
 
 export const metadata: Metadata = {
   title: "Levi Deang | Senior Software Engineer",
