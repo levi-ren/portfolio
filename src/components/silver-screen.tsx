@@ -5,19 +5,19 @@ import ProjectNav from "./project-nav";
 
 interface NetflixCloneProps {}
 
-export default function NetflixClone(props: NetflixCloneProps) {
+export default function SilverScreen(props: NetflixCloneProps) {
   return (
     <div className="flex flex-col items-center gap-4 sm:flex-row">
       <div className="w-full flex-1 ">
         <Anchor
-          href="https://netflix-clone-five-drab.vercel.app"
+          href="https://silver-screen-nu.vercel.app"
           target="_blank"
           className="relative block aspect-video w-full shrink-0 rounded-lg border border-white/20 shadow-lg transition-[border] duration-300"
-          aria-label="Project Flixy demo link"
+          aria-label="Project Silver Screen demo link"
         >
           <Image
-            src="/netflix-clone.png"
-            alt="netflix-clone"
+            src="/silver-screen.webp"
+            alt="silver-screen"
             fill
             title="Flixy Snapshot"
             className="rounded-lg object-contain"
@@ -30,23 +30,24 @@ export default function NetflixClone(props: NetflixCloneProps) {
       </div>
 
       <div className="w-full flex-1 text-sm">
-        <h4 className="font-mono text-4xl">Flixy</h4>
-        <em className="font-mono  text-lg">Netflix Clone</em>
+        <h4 className="font-shadows text-4xl">Silver Screen</h4>
+        <em className="font-shadows  text-lg">Movie and TV streaming site</em>
         <p className="pt-6">
-          Visual clone of the ever popular Netflix, delivering an immersive
-          collection of content across genres, anytime, anywhere.
+          Free streaming platform for movies and TV shows with seamless viewing
+          experience powered by cutting-edge streaming technology
         </p>
         <ul className="ml-6 list-disc p-2">
-          <li>Displays movies and TV shows currently streaming on Netflix</li>
-          <li>1 : 1 visual copy</li>
+          <li>No subscription fees or hidden costs</li>
+          <li>Integration with TMDB for comprehensive insights and details</li>
           <li>
-            <em>*Work in progress*</em>
+            Video streaming functionality facilitated through a third-party
+            library
           </li>
         </ul>
         <ProjectNav
-          projectName="Flixy"
-          githubLink="https://github.com/levi-ren/netflix-clone"
-          demoLink="https://netflix-clone-five-drab.vercel.app"
+          projectName="Silver Screen"
+          demoLink="https://silver-screen-nu.vercel.app"
+          githubLink="https://github.com/levi-ren/silver-screen"
         />
       </div>
     </div>

@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +14,8 @@ module.exports = {
     extend: {
       keyframes: {
         fade: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
+          from: { opacity: "0" },
+          to: { opacity: "100" },
         },
       },
       animation: {
@@ -28,8 +29,8 @@ module.exports = {
         xs: "425px",
       },
       fontFamily: {
-        sans: ["var(--font-quicksand)"],
-        mono: ["var(--font-shadows)"],
+        quicksand: ["var(--font-quicksand)"],
+        shadows: ["var(--font-shadows)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -39,4 +40,6 @@ module.exports = {
     },
   },
   plugins: [],
-};
+} satisfies Config;
+
+export default config;

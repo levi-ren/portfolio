@@ -16,7 +16,7 @@ export default function Parcel(props: ParcelProps) {
           aria-label="Project Parcel demo link"
         >
           <Image
-            src="/parcel.png"
+            src="/parcel.webp"
             alt="Parcel"
             fill
             title="Parcel Snapshot"
@@ -33,8 +33,8 @@ export default function Parcel(props: ParcelProps) {
       </div>
 
       <div className="w-full flex-1  text-sm">
-        <h4 className="font-mono text-4xl">Parcel</h4>
-        <em className="font-mono text-lg">eCommerce</em>
+        <h4 className="font-shadows text-4xl">Parcel</h4>
+        <em className="font-shadows text-lg">eCommerce</em>
         <p className="pt-6">
           Rich and responsive e-commerce platform with a variety of products to
           choose from.

@@ -16,7 +16,7 @@ export default function Tempo(props: TempoProps) {
           aria-label="Project Tempo demo link"
         >
           <Image
-            src="/tempo.png"
+            src="/tempo.webp"
             alt="tempo"
             fill
             title="Tempo Snapshot"
@@ -31,8 +31,8 @@ export default function Tempo(props: TempoProps) {
       </div>
 
       <div className="w-full flex-1  text-sm ">
-        <h4 className="font-mono text-4xl">Tempo</h4>
-        <em className="font-mono  text-lg">Weather app</em>
+        <h4 className="font-shadows text-4xl">Tempo</h4>
+        <em className="font-shadows  text-lg">Weather app</em>
         <p className="pt-6">
           Sleek weather app, offering real-time updates, immersive visuals, and
           personalized forecasts for your everyday adventures.

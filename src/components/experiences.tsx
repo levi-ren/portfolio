@@ -13,7 +13,7 @@ const Divider = () => {
 export default function Experiences(props: ExperiencesProps) {
   return (
     <Container as="section" id="experiences" className="space-y-8 px-2 pt-28">
-      <h3 className="font-mono text-7xl font-bold">Work:</h3>
+      <h3 className="font-shadows text-7xl font-bold">Work:</h3>
       <Container
         as="ol"
         className="relative space-y-8 before:absolute before:left-[26.5px] before:top-0 before:block before:h-full before:w-[3px] before:rounded-full before:bg-zinc-900 before:transition-[background-color] before:duration-300 before:content-[''] before:dark:bg-white md:before:left-1/2 md:before:-translate-x-1/2"
@@ -25,7 +25,7 @@ export default function Experiences(props: ExperiencesProps) {
         >
           <div className="flex-1">
             <time className="text-sm">January 2022 - Present</time>
-            <h3 className="font-mono text-4xl">Lead Developer</h3>
+            <h3 className="font-shadows text-4xl">Lead Developer</h3>
             <p className="text-sm">• MDI Novare •</p>
             <Divider />
             <div className="space-y-2 text-sm">
@@ -57,7 +57,7 @@ export default function Experiences(props: ExperiencesProps) {
           </span>
           <div className="flex-1">
             <time className="text-sm">April 2020</time>
-            <h3 className="font-mono text-4xl">Software Developer</h3>
+            <h3 className="font-shadows text-4xl">Software Developer</h3>
             <p className="text-sm">• Yoonet •</p>
             <Divider />
             <div className="space-y-2 text-sm">
@@ -78,7 +78,9 @@ export default function Experiences(props: ExperiencesProps) {
         >
           <div className="flex-1">
             <time className="text-sm">August 2019</time>
-            <h3 className="font-mono text-4xl">Associate Software Developer</h3>
+            <h3 className="font-shadows text-4xl">
+              Associate Software Developer
+            </h3>
             <p className="text-sm">• Quantum Crowd •</p>
             <Divider />
             <div className="space-y-2 text-sm">

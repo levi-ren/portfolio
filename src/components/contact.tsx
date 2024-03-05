@@ -7,8 +7,8 @@ export default function Contact(props: ContactProps) {
   return (
     <section id="contact" className="px-2 pt-28">
       <Container className="">
-        <h3 className="font-mono text-7xl font-bold">Contact:</h3>
-        <p className="font-mono text-xl">Interested? Feel free to say hi.</p>
+        <h3 className="font-shadows text-7xl font-bold">Contact:</h3>
+        <p className="font-shadows text-xl">Interested? Feel free to say hi.</p>
 
         <Form>
           <div className="relative">

@@ -59,7 +59,7 @@ const Form = ({ children }: FormProps) => {
 
       <dialog
         ref={dialog}
-        className="animate-fade bg-transparent    p-0 font-mono text-xl transition-all backdrop:bg-black/70 backdrop:backdrop-blur-sm dark:text-white "
+        className="animate-fade bg-transparent p-0 font-shadows text-xl transition-all backdrop:bg-black/70 backdrop:backdrop-blur-sm dark:text-white "
         onClick={(e) => e.currentTarget.close()}
       >
         <div

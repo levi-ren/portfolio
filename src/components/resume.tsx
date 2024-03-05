@@ -16,7 +16,7 @@ export default function Resume(props: ResumeProps) {
           aria-label="Project Resume demo link"
         >
           <Image
-            src="/resume.png"
+            src="/resume.webp"
             alt="resume"
             fill
             title="Resume Snapshot"
@@ -30,8 +30,8 @@ export default function Resume(props: ResumeProps) {
       </div>
 
       <div className="w-full flex-1 text-sm">
-        <h4 className="font-mono text-4xl">Resume</h4>
-        <em className="font-mono  text-lg">Digital Abstract</em>
+        <h4 className="font-shadows text-4xl">Resume</h4>
+        <em className="font-shadows  text-lg">Digital Abstract</em>
         <p className="pt-6">
           Simple and consice. A digital version of my traditional resume.
         </p>

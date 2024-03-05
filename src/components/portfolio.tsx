@@ -15,7 +15,7 @@ export default function Portfolio(props: PortfolioProps) {
           aria-label="Project Portfolio demo link"
         >
           <Image
-            src="/portfolio.png"
+            src="/portfolio.webp"
             alt="portfolio"
             fill
             title="Portfolio Snapshot"
@@ -28,8 +28,8 @@ export default function Portfolio(props: PortfolioProps) {
       </div>
 
       <div className="w-full flex-1 text-sm">
-        <h4 className="font-mono text-4xl">Portfolio</h4>
-        <em className="font-mono text-lg">Personal website</em>
+        <h4 className="font-shadows text-4xl">Portfolio</h4>
+        <em className="font-shadows text-lg">Personal website</em>
         <p className="pt-6">
           Comprehensive representation of my professional and creative work.
         </p>
